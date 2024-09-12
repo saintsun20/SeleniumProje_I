@@ -4,6 +4,12 @@ import org.junit.Test;                          import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;          import org.openqa.selenium.support.ui.Select;
 public class TC_0102 extends BaseDriver {
     @Test   public void Test1() {
+        /*
+1. Kullanıcı Akakce.com sitesini tarayıcıda açar.
+2. Ana sayfada "Hesap Oluştur" seçeneğine tıklar.
+3. Kullanıcı sadece bazı bilgileri eksik veya hatalı bir şekilde doldurur.
+4. "Hesap Oluştur" butonuna tıklar.
+         */
         driver.get("https://www.akakce.com/");
         WebElement createAccount = driver.findElement(By.xpath("(//A[@rel='nofollow'][text()='Hesap Aç'])[1]"));
         createAccount.click();
